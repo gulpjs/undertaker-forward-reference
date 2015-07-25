@@ -1,0 +1,33 @@
+{
+  "name": "undertaker-forward-reference",
+  "version": "0.0.0",
+  "description": "Undertaker registry supporting forward referenced tasks",
+  "author": "Blaine Bublitz <blaine@iceddev.com> (http://iceddev.com)",
+  "contributors": [],
+  "repository": "undertakerjs/undertaker-forward-reference",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "lab -cvL"
+  },
+  "dependencies": {
+    "undertaker-registry": "0.0.3"
+  },
+  "devDependencies": {
+    "code": "^1.4.1",
+    "lab": "^5.13.0"
+  },
+  "keywords": [
+    "custom registry",
+    "forward reference",
+    "registry",
+    "undertaker"
+  ]
+}
