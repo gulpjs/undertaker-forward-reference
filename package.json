@@ -1,6 +1,6 @@
 {
   "name": "undertaker-forward-reference",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Undertaker registry supporting forward referenced tasks",
   "author": "Blaine Bublitz <blaine@iceddev.com> (http://iceddev.com)",
   "contributors": [],
