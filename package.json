@@ -2,7 +2,7 @@
   "name": "undertaker-forward-reference",
   "version": "0.1.0",
   "description": "Undertaker registry supporting forward referenced tasks",
-  "author": "Blaine Bublitz <blaine@iceddev.com> (http://iceddev.com)",
+  "author": "Gulp Team <team@gulpjs.com> (http://gulpjs.com/)",
   "contributors": [],
   "repository": "gulpjs/undertaker-forward-reference",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "test": "lab -cv"
   },
   "dependencies": {
-    "undertaker-registry": "0.0.3"
+    "undertaker-registry": "^1.0.0"
   },
   "devDependencies": {
     "code": "^1.4.1",
@@ -28,12 +28,14 @@
     "eslint-config-gulp": "^2.0.0",
     "jscs": "^2.4.0",
     "jscs-preset-gulp": "^1.0.0",
-    "lab": "^5.13.0"
+    "lab": "^6.2.0"
   },
   "keywords": [
-    "custom registry",
     "forward reference",
+    "custom registry",
     "registry",
-    "undertaker"
+    "tasks",
+    "undertaker",
+    "gulp"
   ]
 }
