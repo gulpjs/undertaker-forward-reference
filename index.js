@@ -8,7 +8,8 @@ var DefaultRegistry = require('undertaker-registry');
 function buildTempTask(tasks, name) {
   var tempTask = function() {
     var task = tasks[name];
-    assert(task, 'Forward referenced task \'' + name + '\' not defined before use');
+    assert(task, 'Forward referenced task \'' + name +
+      '\' not defined before use');
     return task.apply(null, arguments);
   };
 

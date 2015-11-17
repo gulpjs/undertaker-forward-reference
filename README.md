@@ -1,8 +1,14 @@
+<p align="center">
+  <a href="http://gulpjs.com">
+    <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
+  </a>
+</p>
+
 # undertaker-forward-reference
 
-[![Travis Build Status](https://img.shields.io/travis/gulpjs/undertaker-forward-reference/master.svg?label=travis&style=flat-square)](https://travis-ci.org/gulpjs/undertaker-forward-reference)
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Gitter chat][gitter-image]][gitter-url]
 
-Undertaker registry supporting forward referenced tasks
+Undertaker custom registry supporting forward referenced tasks.
 
 ## Why?
 
@@ -39,3 +45,13 @@ Constructor for the registry. Pass an instance of this registry to `gulp.registr
 ## License
 
 MIT
+
+[downloads-image]: http://img.shields.io/npm/dm/undertaker-forward-reference.svg
+[npm-url]: https://npmjs.org/package/undertaker-forward-reference
+[npm-image]: http://img.shields.io/npm/v/undertaker-forward-reference.svg
+
+[travis-url]: https://travis-ci.org/gulpjs/undertaker-forward-reference
+[travis-image]: http://img.shields.io/travis/gulpjs/undertaker-forward-reference.svg
+
+[gitter-url]: https://gitter.im/gulpjs/gulp
+[gitter-image]: https://badges.gitter.im/gulpjs/gulp.png
