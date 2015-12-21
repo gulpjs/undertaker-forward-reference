@@ -19,6 +19,10 @@ function buildTempTask(tasks, name) {
 }
 
 function ForwardRefRegistry() {
+  if (this instanceof ForwardRefRegistry === false) {
+    return new ForwardRefRegistry();
+  }
+
   DefaultRegistry.call(this);
 }
 util.inherits(ForwardRefRegistry, DefaultRegistry);
@@ -28,9 +32,9 @@ ForwardRefRegistry.prototype.get = function(name) {
   var task = this._tasks[name];
   if (task) {
     return task;
-  } else {
-    return buildTempTask(this._tasks, name);
   }
+
+  return buildTempTask(this._tasks, name);
 };
 
 module.exports = ForwardRefRegistry;

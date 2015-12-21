@@ -26,7 +26,7 @@ registry before registering any tasks.
 var gulp = require('gulp');
 var FwdRef = require('undertaker-forward-reference');
 
-gulp.registry(FwdRef());
+gulp.registry(FwdRef()); // or gulp.registry(new FwdRef());
 
 gulp.task('default', gulp.series('forward-ref'));
 

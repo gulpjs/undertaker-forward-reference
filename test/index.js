@@ -22,6 +22,13 @@ lab.experiment('Forward Reference Registry', function() {
     done();
   });
 
+  lab.test('does not need to be constructed with new', function(done) {
+    registry = Registry();
+    var task = registry.get('nothing');
+    code.expect(task).to.be.a.function();
+    done();
+  });
+
   lab.test('forward reference function mimics task name', function(done) {
     var task = registry.get('nothing');
     code.expect(task.displayName).to.equal('nothing');
