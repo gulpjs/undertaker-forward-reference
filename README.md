@@ -6,7 +6,7 @@
 
 # undertaker-forward-reference
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Gitter chat][gitter-image]][gitter-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![AppVeyor Build Status][appveyor-image]][appveyor-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Gitter chat][gitter-image]][gitter-url]
 
 Undertaker custom registry supporting forward referenced tasks.
 
@@ -38,7 +38,7 @@ gulp.task('forward-ref', function(cb){
 
 ## API
 
-### ForwardReferenceRegistry
+### `ForwardReferenceRegistry()`
 
 Constructor for the registry. Pass an instance of this registry to `gulp.registry`.
 
@@ -47,11 +47,17 @@ Constructor for the registry. Pass an instance of this registry to `gulp.registr
 MIT
 
 [downloads-image]: http://img.shields.io/npm/dm/undertaker-forward-reference.svg
-[npm-url]: https://npmjs.org/package/undertaker-forward-reference
+[npm-url]: https://npmjs.com/package/undertaker-forward-reference
 [npm-image]: http://img.shields.io/npm/v/undertaker-forward-reference.svg
 
 [travis-url]: https://travis-ci.org/gulpjs/undertaker-forward-reference
-[travis-image]: http://img.shields.io/travis/gulpjs/undertaker-forward-reference.svg
+[travis-image]: http://img.shields.io/travis/gulpjs/undertaker-forward-reference.svg?label=travis-ci
+
+[appveyor-url]: https://ci.appveyor.com/project/gulpjs/undertaker-forward-reference
+[appveyor-image]: https://img.shields.io/appveyor/ci/gulpjs/undertaker-forward-reference.svg?label=appveyor
+
+[coveralls-url]: https://coveralls.io/r/gulpjs/undertaker-forward-reference
+[coveralls-image]: http://img.shields.io/coveralls/gulpjs/undertaker-forward-reference/master.svg
 
 [gitter-url]: https://gitter.im/gulpjs/gulp
 [gitter-image]: https://badges.gitter.im/gulpjs/gulp.png
