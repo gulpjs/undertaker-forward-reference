@@ -1,6 +1,6 @@
 {
   "name": "undertaker-forward-reference",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Undertaker custom registry supporting forward referenced tasks.",
   "author": "Gulp Team <team@gulpjs.com> (http://gulpjs.com/)",
   "contributors": [
