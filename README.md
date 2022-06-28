@@ -6,7 +6,7 @@
 
 # undertaker-forward-reference
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![AppVeyor Build Status][appveyor-image]][appveyor-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Gitter chat][gitter-image]][gitter-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][ci-image]][ci-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 
 Undertaker custom registry supporting forward referenced tasks.
 
@@ -20,7 +20,7 @@ an edge case that is better handled with other patterns (coming soon: links to b
 patterns). If you must use forward referenced tasks, you can set this as a custom
 registry before registering any tasks.
 
-## Example
+## Usage
 
 ```js
 var gulp = require('gulp');
@@ -46,18 +46,14 @@ Constructor for the registry. Pass an instance of this registry to `gulp.registr
 
 MIT
 
-[downloads-image]: http://img.shields.io/npm/dm/undertaker-forward-reference.svg
-[npm-url]: https://npmjs.com/package/undertaker-forward-reference
-[npm-image]: http://img.shields.io/npm/v/undertaker-forward-reference.svg
+<!-- prettier-ignore-start -->
+[downloads-image]: https://img.shields.io/npm/dm/undertaker-forward-reference.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/undertaker-forward-reference
+[npm-image]: https://img.shields.io/npm/v/undertaker-forward-reference.svg?style=flat-square
 
-[travis-url]: https://travis-ci.org/gulpjs/undertaker-forward-reference
-[travis-image]: http://img.shields.io/travis/gulpjs/undertaker-forward-reference.svg?label=travis-ci
-
-[appveyor-url]: https://ci.appveyor.com/project/gulpjs/undertaker-forward-reference
-[appveyor-image]: https://img.shields.io/appveyor/ci/gulpjs/undertaker-forward-reference.svg?label=appveyor
+[ci-url]: https://github.com/gulpjs/undertaker-forward-reference/actions?query=workflow:dev
+[ci-image]: https://img.shields.io/github/workflow/status/gulpjs/undertaker-forward-reference/dev?style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/gulpjs/undertaker-forward-reference
-[coveralls-image]: http://img.shields.io/coveralls/gulpjs/undertaker-forward-reference/master.svg
-
-[gitter-url]: https://gitter.im/gulpjs/gulp
-[gitter-image]: https://badges.gitter.im/gulpjs/gulp.png
+[coveralls-image]: https://img.shields.io/coveralls/gulpjs/undertaker-forward-reference/master.svg?style=flat-square
+<!-- prettier-ignore-end -->
