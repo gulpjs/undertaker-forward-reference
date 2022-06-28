@@ -6,10 +6,12 @@ var assert = require('assert');
 var DefaultRegistry = require('undertaker-registry');
 
 function buildTempTask(tasks, name) {
-  var tempTask = function() {
+  var tempTask = function () {
     var task = tasks[name];
-    assert(task, 'Forward referenced task \'' + name +
-      '\' not defined before use');
+    assert(
+      task,
+      "Forward referenced task '" + name + "' not defined before use"
+    );
     return task.apply(null, arguments);
   };
 
@@ -28,7 +30,7 @@ function ForwardRefRegistry() {
 util.inherits(ForwardRefRegistry, DefaultRegistry);
 
 // Assumes this._tasks from DefaultRegistry
-ForwardRefRegistry.prototype.get = function(name) {
+ForwardRefRegistry.prototype.get = function (name) {
   var task = this._tasks[name];
   if (task) {
     return task;

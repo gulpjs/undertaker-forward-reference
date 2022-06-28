@@ -30,7 +30,7 @@ gulp.registry(FwdRef()); // or gulp.registry(new FwdRef());
 
 gulp.task('default', gulp.series('forward-ref'));
 
-gulp.task('forward-ref', function(cb){
+gulp.task('forward-ref', function (cb) {
   // do task things
   cb();
 });
