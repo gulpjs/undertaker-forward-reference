@@ -17,14 +17,14 @@ describe('Forward Reference Registry', function() {
 
   it('returns a function even if not registered', function(done) {
     var task = registry.get('nothing');
-    expect(task).toBeA('function');
+    expect(typeof task).toEqual('function');
     done();
   });
 
   it('does not need to be constructed with new', function(done) {
     registry = Registry();
     var task = registry.get('nothing');
-    expect(task).toBeA('function');
+    expect(typeof task).toEqual('function');
     done();
   });
 
