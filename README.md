@@ -52,7 +52,7 @@ MIT
 [npm-image]: https://img.shields.io/npm/v/undertaker-forward-reference.svg?style=flat-square
 
 [ci-url]: https://github.com/gulpjs/undertaker-forward-reference/actions?query=workflow:dev
-[ci-image]: https://img.shields.io/github/workflow/status/gulpjs/undertaker-forward-reference/dev?style=flat-square
+[ci-image]: https://img.shields.io/github/actions/workflow/status/gulpjs/undertaker-forward-reference/dev.yml?branch=master&style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/gulpjs/undertaker-forward-reference
 [coveralls-image]: https://img.shields.io/coveralls/gulpjs/undertaker-forward-reference/master.svg?style=flat-square
