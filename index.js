@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
-var util = require('util');
-var assert = require('assert');
+var util = require("util");
+var assert = require("assert");
 
-var DefaultRegistry = require('undertaker-registry');
+var DefaultRegistry = require("undertaker-registry");
 
 function buildTempTask(tasks, name) {
   var tempTask = function () {
     var task = tasks[name];
     assert(
       task,
-      "Forward referenced task '" + name + "' not defined before use"
+      "Forward referenced task '" + name + "' not defined before use",
     );
     return task.apply(null, arguments);
   };
