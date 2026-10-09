@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://gulpjs.com">
+  <a href="https://gulpjs.com">
     <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
   </a>
 </p>
@@ -23,14 +23,14 @@ registry before registering any tasks.
 ## Usage
 
 ```js
-var gulp = require('gulp');
-var FwdRef = require('undertaker-forward-reference');
+var gulp = require("gulp");
+var FwdRef = require("undertaker-forward-reference");
 
 gulp.registry(FwdRef()); // or gulp.registry(new FwdRef());
 
-gulp.task('default', gulp.series('forward-ref'));
+gulp.task("default", gulp.series("forward-ref"));
 
-gulp.task('forward-ref', function (cb) {
+gulp.task("forward-ref", function (cb) {
   // do task things
   cb();
 });
@@ -42,6 +42,16 @@ gulp.task('forward-ref', function (cb) {
 
 Constructor for the registry. Pass an instance of this registry to `gulp.registry`.
 
+## Strict No LLM / No AI Policy
+
+No LLMs for issues.
+
+No LLMs for patches / pull requests.
+
+No LLMs for comments on the bug tracker, including translation.
+
+English is encouraged, but not required. You are welcome to post in your native language and rely on others to have their own translation tools of choice to interpret your words.
+
 ## License
 
 MIT
@@ -51,9 +61,9 @@ MIT
 [npm-url]: https://www.npmjs.com/package/undertaker-forward-reference
 [npm-image]: https://img.shields.io/npm/v/undertaker-forward-reference.svg?style=flat-square
 
-[ci-url]: https://github.com/gulpjs/undertaker-forward-reference/actions?query=workflow:dev
-[ci-image]: https://img.shields.io/github/actions/workflow/status/gulpjs/undertaker-forward-reference/dev.yml?branch=master&style=flat-square
+[ci-url]: https://github.com/gulpjs/undertaker-forward-reference/actions/workflows/dev.yml
+[ci-image]: https://img.shields.io/github/actions/workflow/status/gulpjs/undertaker-forward-reference/dev.yml?style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/gulpjs/undertaker-forward-reference
-[coveralls-image]: https://img.shields.io/coveralls/gulpjs/undertaker-forward-reference/master.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/gulpjs/undertaker-forward-reference/main.svg?style=flat-square
 <!-- prettier-ignore-end -->
