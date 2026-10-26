@@ -1,6 +1,7 @@
 "use strict";
 
-var expect = require("expect");
+var assert = require("node:assert");
+var { beforeEach, describe, it } = require("node:test");
 
 var Registry = require("../");
 
@@ -9,43 +10,39 @@ function noop() {}
 describe("Forward Reference Registry", function () {
   var registry;
 
-  beforeEach(function (done) {
+  beforeEach(function () {
     registry = new Registry();
-    done();
   });
 
-  it("returns a function even if not registered", function (done) {
+  it("returns a function even if not registered", function () {
     var task = registry.get("nothing");
-    expect(typeof task).toEqual("function");
-    done();
+    assert.strictEqual(typeof task, "function");
   });
 
-  it("does not need to be constructed with new", function (done) {
+  it("does not need to be constructed with new", function () {
+    // eslint-disable-next-line new-cap
     registry = Registry();
     var task = registry.get("nothing");
-    expect(typeof task).toEqual("function");
-    done();
+    assert.strictEqual(typeof task, "function");
   });
 
-  it("forward reference function mimics task name", function (done) {
+  it("forward reference function mimics task name", function () {
     var task = registry.get("nothing");
-    expect(task.displayName).toEqual("nothing");
-    done();
+    assert.strictEqual(task.displayName, "nothing");
   });
 
-  it("returns the task if already registered", function (done) {
+  it("returns the task if already registered", function () {
     registry.set("nothing", noop);
     var task = registry.get("nothing");
-    expect(task).toEqual(noop);
-    done();
+    assert.deepStrictEqual(task, noop);
   });
 
-  it("excutes task when forward reference is called", function (done) {
+  it("executes task when forward reference is called", function (t, done) {
     var count = 0;
 
     function actualTask() {
       count++;
-      expect(count).toEqual(1);
+      assert.strictEqual(count, 1);
       done();
     }
 
@@ -55,11 +52,10 @@ describe("Forward Reference Registry", function () {
     task();
   });
 
-  it("throws if task is not defined before forward ref is called", function (done) {
+  it("throws if task is not defined before forward ref is called", function () {
     var task = registry.get("nothing");
-    expect(task).toThrow(
-      "Forward referenced task 'nothing' not defined before use",
-    );
-    done();
+    assert.throws(task, {
+      message: "Forward referenced task 'nothing' not defined before use",
+    });
   });
 });
