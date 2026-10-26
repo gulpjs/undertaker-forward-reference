@@ -22,7 +22,6 @@ describe("Forward Reference Registry", function () {
   it("does not need to be constructed with new", function () {
     // eslint-disable-next-line new-cap
     registry = Registry();
-    // eslint-enable-next-line new-cap
     var task = registry.get("nothing");
     assert.strictEqual(typeof task, "function");
   });
