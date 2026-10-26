@@ -2,6 +2,7 @@
 
 var assert = require("node:assert");
 var { beforeEach, describe, it } = require("node:test");
+
 var Registry = require("../");
 
 function noop() {}
